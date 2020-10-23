@@ -1,0 +1,180 @@
+:root {
+    --dark-color: rgb(134, 16, 16);
+    --light-color: rgba(255, 255, 255, 0.589);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background: black;
+}
+body {
+    background-image: url("../img/pexels-pixabay-248747 (1).jpg");
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+header {
+    color: rgba(255, 255, 255, 0.671);
+    padding: 10px;
+    width: 75%;
+    margin: 10px auto;
+}
+
+h1 {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(rgba(131, 66, 66, 0.185), rgba(0, 0, 0, 0));
+    animation-name: h101;
+    animation-delay: 0s;
+    animation-duration: 10s;
+}
+
+main {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    text-align: justify;
+    animation-name: fire05;
+    animation-duration: 4s;
+    animation-delay: 0s;
+}
+
+article {
+    background: linear-gradient(rgba(255, 255, 255, 0.027), rgba(0, 0, 0, 0));
+    color: rgba(255, 255, 255, 0.589);
+    width: 35%;
+    padding: 6px;
+    height: 700px;
+    animation-name: fire01;
+    animation-delay: 0s;
+    animation-duration: 4s;
+}
+
+.article1 {
+    width: 40%;
+    margin: 10px 0px 0px 200px;
+}
+
+img {
+    margin: 60px 20px 20px 5px;
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 11% 100%, 0% 50%, 13% 0);
+    float: left;
+}
+
+hr {
+    margin: 30px;
+    border-color: var(--dark-color);
+    animation-name: fire02;
+    animation-delay: 0s;
+    animation-duration: 4s;
+}
+
+button {
+    display: block;
+    font-size: 20px;
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    border-color: var(--dark-color);
+    background: black;
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-color: black;
+}
+
+.mainblock {
+    display: flex;
+    justify-content: center;
+}
+
+.block {
+    background: black;
+    margin: 20px;
+    width: 10px;
+    height: 10px;
+    animation-name: fire;
+    animation-delay: 4s;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+.pip {
+    animation-name: button01;
+    animation-delay: 0s;
+    animation-direction: 4s;
+}
+
+@keyframes fire {
+    0% {
+        background: black;
+    }
+
+    50% {
+        background: white;
+    }
+
+    100% {
+        background: black;
+    }
+}
+
+@keyframes fire01 {
+    0% {
+        color: black;
+    }
+
+    100% {
+        color: rgba(255, 255, 255, 0.589);
+    }
+}
+
+@keyframes fire02 {
+    0% {
+        border-color: black;
+    }
+
+    100% {
+        border-color: var(--dark-color);
+    }
+}
+
+@keyframes buttons01 {
+    0% {
+        background-color: black;
+        border-color: black;
+        color: black;
+    }
+
+    100% {
+        background: black;
+        border-color: white;
+        color: white;
+    }
+}
+
+
+footer {
+    display: flex;
+    clip-path: polygon(100% 51%, 100% 50%, 100% 100%, 0 100%, 0% 50%, 0 50%);
+    flex-direction: column-reverse;
+    margin: 0px 100px 0px 0px;
+    background: linear-gradient(rgba(0, 0, 0, 0.103), var(--dark-color));
+    width: 100%;
+    color: black;
+    height: 500px;
+}
+
+h2 {
+    padding: 40px;
+    font-size: 190%;
+}
+
